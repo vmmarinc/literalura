@@ -14,7 +14,7 @@ public class JsonParser {
         ObjectMapper mapper = new ObjectMapper();
         JsonNode rootNode = mapper.readTree(jsonResponse);
 
-        // Verifica si el nodo 'results' existe
+        
         JsonNode booksNode = rootNode.get("results");
         if (booksNode == null) {
             System.out.println("No se encontró el nodo 'results' en la respuesta JSON.");

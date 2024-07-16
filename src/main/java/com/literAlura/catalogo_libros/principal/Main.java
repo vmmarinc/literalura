@@ -77,12 +77,12 @@ public class Main implements CommandLineRunner {
                 case 2:
                     System.out.println("Opción 2 seleccionada: Listar libros registrados.");
                     bookService.getAllBooks().forEach(System.out::println);
-//                    List<Book> books = bookService.getAllBooks();
-//                    if (books.isEmpty()) {
-//                        System.out.println("No hay libros registrados.");
-//                    } else {
-//                        books.forEach(System.out::println);
-//                    }
+                    List<Book> books = bookService.getAllBooks();
+                    if (books.isEmpty()) {
+                        System.out.println("No hay libros registrados.");
+                    } else {
+                        books.forEach(System.out::println);
+                    }
                     break;
                 case 3:
                     System.out.println("Opción 3 seleccionada: Listar autores registrados.");

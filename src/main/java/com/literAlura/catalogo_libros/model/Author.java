@@ -18,8 +18,6 @@ public class Author {
     @JsonProperty("death_year")
     private int deathYear;
 
-    // Getters y setters
-
     public String getName() {
         return name;
     }

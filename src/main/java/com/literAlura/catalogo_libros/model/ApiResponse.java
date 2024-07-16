@@ -19,22 +19,3 @@ public class ApiResponse {
         this.results = results;
     }
 }
-
-
-
-
-//package com.literAlura.catalogo_libros.repository;
-//
-//import com.fasterxml.jackson.core.type.TypeReference;
-//import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.literAlura.catalogo_libros.model.Book;
-//
-//import java.io.IOException;
-//import java.util.List;
-//
-//public class ApiResponse {
-//    public List<Book> parseResponse(String jsonResponse) throws IOException {
-//        ObjectMapper mapper = new ObjectMapper();
-//        return mapper.readValue(jsonResponse, new TypeReference<List<Book>>() {});
-//    }
-//}
